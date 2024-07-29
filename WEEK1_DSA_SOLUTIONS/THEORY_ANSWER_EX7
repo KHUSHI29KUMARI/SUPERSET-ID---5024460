@@ -1,0 +1,24 @@
+QUESTION 1
+Explain the concept of recursion and how it can simplify certain problems
+SOLUTION
+Concept of Recursion
+Recursion is a technique where a function calls itself to solve a smaller instance of the same problem. It typically consists of:
+Base Case: The condition under which the recursion stops.
+Recursive Case: The part where the function calls itself with modified parameters.
+
+Benefits:
+Simplifies complex problems by breaking them down into smaller, manageable sub-problems.
+Often makes code more intuitive and easier to understand.
+
+QUESTION 2
+Discuss the time complexity of your recursive algorithm.
+SOLUTION
+Time Complexity
+Time Complexity: The time complexity of the recursive method is O(n), where n is the number of years. This is because the function makes a recursive call for each year.
+
+QUESTION 3
+Explain how to optimize the recursive solution to avoid excessive computation.
+SOLUTION
+To optimize the recursive solution and avoid excessive computation, you can use memoization to store previously computed results and reuse them. However, for this simple forecasting scenario, recursion is straightforward and memoization might be overkill.
+
+If the problem becomes more complex or involves overlapping sub-problems, memoization would become crucial. In this case, each year’s forecast is independent, so memoization isn't needed.

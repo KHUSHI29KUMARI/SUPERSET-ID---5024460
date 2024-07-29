@@ -1,0 +1,21 @@
+QUESTION 1
+Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+SOLUTION
+Types of Linked Lists
+Singly Linked List: Each node contains a value and a reference (link) to the next node in the list. It allows traversal in one direction only (forward).
+Doubly Linked List: Each node contains a value, a reference to the next node, and a reference to the previous node. It allows traversal in both directions (forward and backward).
+
+QUESTION 2
+Analyze the time complexity of each operation.
+SOLUTION
+Time Complexity
+Add: O(n) - Adding a task requires traversal to find the end of the list. If the list is kept in a doubly linked list or with a tail reference, this can be optimized to O(1).
+Search: O(n) - Searching for a task requires traversing the list until the desired task is found.
+Traverse: O(n) - Traversing the entire list requires visiting each node once.
+Delete: O(n) - Deleting a task requires finding the task first, then adjusting the links.
+
+QUESTION 3
+Discuss the advantages of linked lists over arrays for dynamic data.
+SOLUTION
+Dynamic Sizing: Linked lists do not have a fixed size, allowing for efficient expansion and contraction of the list.
+Efficient Insertions/Deletions: Insertions and deletions can be performed without shifting elements, which can be more efficient than arrays where elements need to be shifted.

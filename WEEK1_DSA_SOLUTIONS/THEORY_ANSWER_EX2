@@ -1,0 +1,38 @@
+QUESTION 1
+Explain Big O notation and how it helps in analyzing algorithms.Describe the best, average, and worst-case scenarios for search operations.
+SOLUTION
+Big O notation is a mathematical concept used to describe the performance or complexity of an algorithm. It provides an upper bound on the time (or space) an algorithm takes to complete as a function of the input size, denoted as n. Big O notation helps in understanding the worst-case scenario of an algorithm's performance, which is crucial for evaluating and comparing the efficiency of different algorithms.
+
+Common Big O Notations:
+
+O(1): Constant time - The performance is independent of the input size.
+O(log n): Logarithmic time - The performance increases logarithmically as the input size increases.
+O(n): Linear time - The performance increases linearly with the input size.
+O(n log n): Log-linear time - The performance increases in proportion to n log n.
+O(n^2): Quadratic time - The performance increases quadratically with the input size.
+O(2^n): Exponential time - The performance doubles with each additional element in the input.
+Best, Average, and Worst-Case Scenarios for Search Operations
+Best Case: The minimum time required for the algorithm to complete. For example, in searching, the best case occurs when the target element is the first element of the list.
+Average Case: The expected time required for the algorithm to complete, averaged over all possible inputs.
+Worst Case: The maximum time required for the algorithm to complete. In searching, the worst case occurs when the target element is at the end of the list or not present at all.
+
+QUESTION 2
+Compare the time complexity of linear and binary search algorithms.
+SOLUTION
+Time Complexity Comparison
+Linear Search:
+Best Case: O(1) - When the target is the first element.
+Average Case: O(n/2) or O(n) - On average, half of the elements are checked.
+Worst Case: O(n) - When the target is the last element or not present.
+
+Binary Search:
+Best Case: O(1) - When the target is the middle element.
+Average Case: O(log n) - Due to the halving of the search space.
+Worst Case: O(log n) - When the target is not present and the search space is halved until empty.
+
+QUESTION 3
+Discuss which algorithm is more suitable for your platform and why.
+SOLUTION
+Binary Search is generally more suitable for the e-commerce platform due to its logarithmic time complexity, which ensures faster performance on large datasets compared to linear search. However, binary search requires the array to be sorted, which may add overhead if frequent updates to the product list occur.
+
+Linear Search can be useful when dealing with small datasets or unsorted arrays, but its performance degrades significantly with larger datasets.

@@ -1,0 +1,56 @@
+QUESTION -1 
+Explain why data structures and algorithms are essential in handling large inventories.
+SOLUTION
+Data structures and algorithms play a critical role in handling large inventories due to the following reasons:
+
+Efficiency: Efficient data structures and algorithms allow for quick retrieval, insertion, and deletion of inventory items. This is crucial when dealing with large inventories to maintain high performance.
+Scalability: Proper data structures ensure that the inventory management system can scale as the number of products grows. This helps in maintaining performance and usability as the dataset increases.
+Organization: Data structures help in organizing the inventory data in a way that makes it easy to manage and manipulate. This organization is essential for implementing features like search, sorting, and categorization.
+Memory Management: Efficient algorithms and data structures help in optimizing memory usage, which is vital when handling large datasets to avoid excessive memory consumption and potential crashes.
+
+QUESTION -2 
+Discuss the types of data structures suitable for this problem.
+SOLUTION
+ArrayList:
+Strengths: Allows dynamic resizing, provides quick access by index, and is easy to implement.
+Weaknesses: Insertion and deletion operations can be slow, especially in the middle of the list.
+
+LinkedList:
+Strengths: Efficient insertion and deletion at both ends, provides dynamic resizing.
+Weaknesses: Access time is slower as it requires traversal from the head to the desired element.
+
+HashMap:
+Strengths: Provides average O(1) time complexity for insertion, deletion, and lookup operations, which is ideal for fast access and updates.
+Weaknesses: Requires more memory for storing key-value pairs, and hash collisions can affect performance.
+
+TreeMap:
+Strengths: Maintains sorted order, provides O(log n) time complexity for insertion, deletion, and lookup.
+Weaknesses: Slower than HashMap for insertion and deletion due to tree balancing operations.
+
+QUESTION -3
+Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+SOLUTION
+Time Complexity Analysis
+Add Product:
+Operation: products.put(product.getProductId(), product)
+Time Complexity: O(1) on average, O(n) in the worst case due to hash collisions.
+
+Update Product:
+Operation: products.put(productId, product)
+Time Complexity: O(1) on average, O(n) in the worst case due to hash collisions.
+
+Delete Product:
+Operation: products.remove(productId)
+Time Complexity: O(1) on average, O(n) in the worst case due to hash collisions.
+
+Get Product:
+Operation: products.get(productId)
+Time Complexity: O(1) on average, O(n) in the worst case due to hash collisions.
+
+QUESTION -4
+Discuss how you can optimize these operations.
+SOLUTION
+Minimize Hash Collisions: Use a good hash function to minimize the number of collisions and ensure a more even distribution of keys.
+Resizing: Ensure that the HashMap is resized appropriately to maintain a balance between space and time complexity.
+Concurrency: If dealing with a multi-threaded environment, consider using ConcurrentHashMap for thread-safe operations without locking the entire map.
+Batch Operations: For large scale updates or deletions, batch operations can help in reducing the overhead and improving performance.
